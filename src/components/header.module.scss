@@ -1,0 +1,82 @@
+.header {
+  position: absolute;
+  height: 4.2rem;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 0.5rem;
+}
+
+.logo {
+  max-width: 200px;
+  max-height: 25px;
+  margin-top: -0.3rem;
+}
+
+.logo img {
+  padding: 0;
+  margin: 0;
+}
+
+.image {
+  text-align: center;
+}
+
+
+
+@media print, screen and (min-width: 40em) {
+  .image {
+    text-align: left;
+  }
+}
+
+.link {
+  color: Black;
+  text-decoration: none;
+}
+
+.button {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1rem;
+  margin: 0.6rem 0.5rem;
+  padding: 0.5rem 0.6rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);;
+  outline: none;
+  text-decoration: none;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2);
+  img {
+    margin: 0 !important;
+  }
+}
+
+.imgButton {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1rem;
+  margin: 0.6rem 0.5rem;
+  padding: 0.25rem 0.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);;
+  outline: none;
+  text-decoration: none;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.buttons {
+  text-align: right;
+}
+
+.audioIcon {
+  height: 1.5rem;
+  width: auto;
+  margin: 0;
+}
+
+.fullScreenIcon {
+  height: 1.5rem;
+  width: auto;
+  margin: 0;
+}

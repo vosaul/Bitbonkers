@@ -1,0 +1,98 @@
+.sidebarInner {
+  position: relative;
+  background-color: rgba(255, 255, 255, 1);
+  color: black;
+  pointer-events: auto;
+  height: 100%;
+  width: 100%;
+  z-index: -2;
+}
+
+.head {
+  position: fixed;
+  background-color: #ddd;
+  font-size: 0.8rem;
+  height: 4.2rem;
+  width: 100%;
+  padding: 0.5rem;
+  z-index: -1;
+}
+
+.content {
+  position: relative;
+  font-size: 0.65rem;
+  padding: 1rem 1rem 4.5rem 1rem;
+  top: 0;
+  height: 100%;
+  overflow: scroll;
+  z-index: -2;
+}
+
+.inner {
+  padding: 0.5rem;
+}
+
+.right {
+  float: right;
+  text-align: right;
+  font-weight: 400;
+}
+
+.info {
+  font-weight: 900;
+}
+
+.hash {
+  font-size: 0.8rem;
+  font-weight: 600;
+  word-break: break-all;
+}
+
+.address {
+  font-weight: 600;
+  margin-bottom: 0.1rem;
+  word-break: break-all;
+}
+
+.marketing {
+  opacity: 1;
+}
+
+.button {
+  display: block;
+  width: 100%;
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1rem;
+  margin: 0 auto;
+  padding: 1rem;
+  border: 1px solid black;
+  outline: none;
+  text-decoration: none;
+  color: black;
+}
+
+@media print, screen and (min-width: 40em) {
+  .head {
+    top: 0;
+  }
+  .button {
+    width: auto;
+    display: inline-block;
+    margin: 0.6rem 0.5rem;
+    padding: 0.5rem 1rem;
+  }
+  .content {
+    font-size: 0.7rem;
+    padding: 4.5rem 1rem 1rem 1rem;
+  }
+  .hash {
+    font-size: 0.9rem;
+  }
+}
+
+@media print, screen and (max-width: 40em) {
+  .head {
+    bottom: 0;
+  }
+}

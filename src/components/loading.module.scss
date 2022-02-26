@@ -1,0 +1,153 @@
+.container {
+  position: absolute;
+  z-index: 10;
+  color: white;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  transition: opacity 1s ease-out;
+  background-color: rgba(0.5, 0.5, 0.5, 1);
+  background: rgb(23, 23, 23);
+  background: linear-gradient(
+    144deg,
+    rgba(23, 23, 23, 1) 0%,
+    rgba(50, 50, 50, 1) 100%
+  );
+  z-index: 100;
+}
+
+.container h1 {
+  font-size: 0.8rem;
+  white-space: nowrap;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: calc(50% - 8rem);
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.container h1 a {
+  text-decoration: none;
+}
+
+.container a {
+  color: white;
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+  top: calc(50% - 4.4rem);
+  transform: translate3d(-50%, -50%, 0);
+  width: 18rem;
+}
+
+.loading {
+  font-size: 1rem;
+  position: absolute;
+  top: 50%;
+  transform: translate3d(0, -50%, 0);
+  width: 100%;
+  text-align: center;
+}
+
+.options {
+  position: absolute;
+  display: none;
+  top: 50%;
+  transform: translate3d(0, -50%, 0);
+  width: 100%;
+  text-align: center;
+}
+
+.options button {
+  font-size: 1rem;
+  text-align: center;
+  border: 1px white solid;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  padding: 0.5rem 1rem;
+  margin: 0.2rem 0.2rem;
+}
+
+.bottomText {
+  position: absolute;
+  left: 50%;
+  top: calc(50% + 3.5rem);
+  transform: translate3d(-50%, -50%, 0);
+  width: 18rem;
+}
+
+.bottomText p {
+  font-size: 0.7rem;
+  text-align: center;
+  line-height: 0.8rem;
+  margin: 0;
+  padding: 0.5rem 0.1rem;
+}
+
+/* Medium and up */
+@media screen and (min-width: 40em) {
+  .container h1 {
+    font-size: 1.4rem;
+    top: calc(50% - 16rem);
+  }
+
+  .logo {
+    top: calc(50% - 8.5rem);
+    width: 40rem;
+    max-width: 90%;
+  }
+
+  .options button {
+    font-size: 2rem;
+    padding: 0.6rem 1.2rem;
+    margin: 0.4rem 0.4rem;
+  }
+
+  .bottomText {
+    top: calc(50% + 5rem);
+    width: 46rem;
+    max-width: 90%;
+  }
+
+  .bottomText p {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    padding: 1rem 0.2rem;
+  }
+}
+
+/* Large and up */
+/*
+@media screen and (min-width: 64em) {
+  .container h2 {
+    font-size: 1.8rem;
+    top: calc(50% - 20rem);
+  }
+
+  .logo {
+    top: calc(50% - 10rem);
+    width: 42rem;
+  }
+
+  .options button {
+    font-size: 2.4rem;
+    padding: 0.8rem 1.6rem;
+    margin: 0.6rem 0.6rem;
+  }
+
+  .bottomText {
+    top: calc(50% + 13rem);
+    width:42rem;
+  }
+
+  .bottomText p {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    padding: 1rem 0.2rem;
+  }
+}
+*/

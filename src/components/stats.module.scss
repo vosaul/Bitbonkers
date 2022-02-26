@@ -1,0 +1,71 @@
+// .container {
+//   position: absolute;
+//   left: 0;
+//   right: 0;
+//   bottom: 3.8rem;
+//   background-color: rgba(0, 0, 0, 0.1);
+//   color: white;
+//   pointer-events: auto;
+// }
+
+.container {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: white;
+  pointer-events: auto;
+}
+
+@media print, screen and (min-width: 40em) {
+  .container {
+    bottom: 2.4rem;
+  }
+}
+
+.container div div {
+  text-align: center;
+}
+
+.inner {
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: left;
+}
+
+.left {
+  height: 2.4rem;
+  font-size: 0.8rem;
+  font-weight: 900;
+  line-height: 2.4rem;
+  display: inline-block;
+  padding: 0 0.2rem;
+  float: left;
+  text-align: right;
+}
+
+.right {
+  height: 2.4rem;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  display: inline-block;
+  padding: 0 0.2rem;
+  text-align: left;
+}
+
+.toggle {
+  position: absolute;
+  margin-top: 60px;
+  padding: 0.5rem;
+  color: white;
+  z-index: 10;
+  outline-style: none;
+  pointer-events: auto;
+}
+
+button {
+  color: white;
+}

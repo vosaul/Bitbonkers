@@ -1,0 +1,79 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  border: none;
+  height: 100%;
+  width: 100%;
+  overflow: none;
+}
+
+body {
+  position: fixed;
+  background-color: #333;
+  font-family: "Lato";
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+p {
+  font-weight: 200;
+}
+
+#main {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  background-color: #444;
+  transform: translate(0, 0);
+  transition: transform 0.5s;
+  transition-delay: 0.25s;
+}
+
+.panelOpen {
+  transform: translate(0, -100vh) !important;
+  transition: transform 0.5s;
+}
+
+#sidebar {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -2;
+}
+
+@media print, screen and (max-width: 35em) {
+  #main {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media print, screen and (min-width: 35em) {
+  .panelOpen {
+    transform: translate(0, 0) !important;
+    margin-right: 24rem;
+  }
+  #sidebar {
+    width: 24rem;
+    top: 0;
+    right: 0;
+  }
+}
+
+@media print, screen and (min-width: 80em) {
+  .panelOpen {
+    margin-right: 30rem;
+  }
+  #sidebar {
+    width: 30rem;
+  }
+}
