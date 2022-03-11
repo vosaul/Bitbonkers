@@ -1,9 +1,14 @@
 .header {
   position: absolute;
+  top: 125px;
   height: 4.2rem;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.1);
   padding: 0.5rem;
+}
+header .grid-x {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .logo {

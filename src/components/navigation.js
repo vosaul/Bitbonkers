@@ -1,14 +1,23 @@
 import React from "react"
 import styled from "styled-components"
+import Logo from "../images/privacypros-logo.svg"
+import PhoneIcon from "../images/phone_logo.png"
 
 const Nav = styled.section`
-  background-color: #008080;
+  background-color: #fff;
   font-size: 14px;
   font-family: sans-serif;
-  padding: 10px;
+  padding: 24px 10px 10px;
   text-align: center;
+  .nav-inner {
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+  }
   * {
-    color: #fff;}
+  color: #000;
+ }
   b {
     position: fixed;
     top: 10px;
@@ -17,41 +26,85 @@ const Nav = styled.section`
     z-index: 100;
   }
 `
+const Auth = styled.div`
+  width: fit-content;
+  height: max-content;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  .icon {
+    width: 16px;
+    height: 16px;
+    margin: 0;
+    }
+`
+const Phone = styled.div`
+  display: flex;
+  gap: 10px;
+  align-content: center;
+`
+const Dealer = styled.div`
+    width: fit-content;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border: 1px solid #029090;
+    border-radius: 3px;
+  .text-container {
+    display: grid;
+    span {
+      padding: 0;
+      margin: 0;
+    }
+    .first-text {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 1;
+    }
+    .second-text {
+      font-size: 11px;
+      line-height: 11px;
+      letter-spacing: 0.9px;
+    }
+  }
+`
 const Navigation = () => {
-return (
-<Nav id="header" role="banner" className="nav-wrapper">
+  return (
+    <Nav id="header" role="banner" className="nav-wrapper">
+      <div id="header-inner" className="group nav-inner">
 
-<div id="header-inner" className="group nav-inner">
+        <div id="logo" className="nav-logo">
+          <a href="https://privacypros.io/">
+            <img src={Logo} alt="logo" width="120" height="37" loading="lazy" />
+          </a>
+        </div>
 
-  <div id="logo" className="nav-logo">
-    <a href="/">
-      <img src="/images/nav-menu/privacypros-logo.svg" alt="logo" width="120" height="37" loading="lazy" />
-    </a>
-  </div>
+        <Auth id="auth_retailer">
+          <Phone>
+            <img src={PhoneIcon} className="icon" alt="icon"></img>
+            <span className="text">(281) 612-8484</span>
+          </Phone>
+          <Dealer>
+            <img src={PhoneIcon} className="icon" alt="icon"></img>
+            <div className="text-container">
+              <span className="first-text">AUTHORIZED</span>
+              <span className="second-text">WALLET DEALER</span>
+            </div>
+          </Dealer>
+        </Auth>
 
-  <div id="auth_retailer">
-    <div className="phone_no">
-      <span className="icon-set icon-set--phone-logo"></span>
-      <span className="text">(281) 612-8484</span>
-    </div>
-    <div className="auth_logo--container">
-      <span className="icon-set icon-set--auth-logo"></span>
-      <div className="text-container">
-        <span className="first-text">AUTHORIZED</span>
-        <span className="second-text">WALLET DEALER</span>
+       {/*  <a href="#nav" id="toggle-nav" className="toggle-nav" aria-label="Toggle Navigation">
+          <div className="hamburger" id="hamburger-1">
+            <span className="line"></span>
+            <span className="line"></span>
+            <span className="line"></span>
+          </div>
+        </a> */}
       </div>
-    </div>
-  </div>
-
-  <a href="#nav" id="toggle-nav" className="toggle-nav" aria-label="Toggle Navigation">
-    <div className="hamburger" id="hamburger-1">
-      <span className="line"></span>
-      <span className="line"></span>
-      <span className="line"></span>
-    </div>
-  </a> 
-</div>
-{/* 
+      {/* 
 <div id="mobile-nav" className="mobile-nav">
 
   <ul className="mobile-nav-main">
@@ -200,7 +253,8 @@ return (
   </a>
 
 </div> */}
-</Nav>
-)}
+    </Nav>
+  )
+}
 
 export default Navigation
